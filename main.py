@@ -17,6 +17,7 @@
 import os
 
 from flask import Flask
+import google.cloud.logging
 
 app = Flask(__name__)
 
@@ -24,8 +25,8 @@ try:
     import googleclouddebugger
 
     googleclouddebugger.enable(breakpoint_enable_canary=True, module="helloworld")
-    # client = google.cloud.logging.Client()
-    # client.setup_logging(log_level=logging.DEBUG)
+    client = google.cloud.logging.Client()
+    client.setup_logging()
 except ImportError as e:
     # print(f"Failed to import Google Cloud Debugger: {e}")
     # log.debug(f"Failed to import Google Cloud Debugger: {e}")
