@@ -20,7 +20,7 @@ from flask import Flask
 import google.cloud.logging
 import logging
 
-log = logging.make_logger(__name__)
+log = logging.getLogger(__name__)
 
 app = Flask(__name__)
 
