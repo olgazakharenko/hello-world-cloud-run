@@ -18,9 +18,9 @@ import os
 
 from flask import Flask
 import google.cloud.logging
-import logger
+import logging
 
-log = logger.make_logger(__name__)
+log = logging.make_logger(__name__)
 
 app = Flask(__name__)
 
