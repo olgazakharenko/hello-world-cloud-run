@@ -18,4 +18,6 @@ jobs:
 #          FILTER_REGEX_EXCLUDE: .*(lib/example|\.github|\.vscode|pull_request_template).*
           PYTHON_BLACK_CONFIG_FILE: true
           VALIDATE_CLOJURE: true
-          VALIDATE_GO: trues
+          VALIDATE_GO: true
+          LINTER_RULES_PATH: /
+#          VALIDATE_ALL_CODEBASE: false
