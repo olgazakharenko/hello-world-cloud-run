@@ -19,4 +19,5 @@ jobs:
           VALIDATE_PYTHON_BLACK	: true
           VALIDATE_CLOJURE: true
           VALIDATE_GO: true
+          VALIDATE_DOCKERFILE_HADOLINT: true
 #          VALIDATE_ALL_CODEBASE: false
