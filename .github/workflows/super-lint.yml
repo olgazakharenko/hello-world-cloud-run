@@ -15,7 +15,8 @@ jobs:
         env:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          FILTER_REGEX_EXCLUDE: .*(lib/example|\.github|\.vscode|pull_request_template).*
-          PYTHON_BLACK_CONFIG_FILE: true
+          VALIDATE_PYTHON_BLACK	: true
           VALIDATE_CLOJURE: true
-          VALIDATE_GO: trues
+          VALIDATE_GO: true
+          VALIDATE_DOCKERFILE_HADOLINT: true
+          VALIDATE_ALL_CODEBASE: false
