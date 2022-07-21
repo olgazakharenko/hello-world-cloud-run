@@ -19,5 +19,5 @@ jobs:
           PYTHON_BLACK_CONFIG_FILE: true
           VALIDATE_CLOJURE: true
           VALIDATE_GO: true
-          LINTER_RULES_PATH: /
+#          LINTER_RULES_PATH: /
 #          VALIDATE_ALL_CODEBASE: false
